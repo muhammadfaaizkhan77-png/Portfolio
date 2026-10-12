@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Faaiz Khan | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="Images/profile.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css?v=20260913-1">
+
+<style id="custom-cursor">
+/* Custom cursor — desktop only */
+html, body, a, button, input, textarea, select, [role="button"] { cursor: none !important; }
+.custom-cursor-dot{
+  position:fixed;width:7px;height:7px;border-radius:50%;
+  background:#00abf0;pointer-events:none;z-index:2147483647;
+  transform:translate(-50%,-50%);
+}
+.custom-cursor-ring{
+  position:fixed;width:30px;height:30px;border:1.5px solid #00abf0;
+  border-radius:50%;pointer-events:none;z-index:2147483646;
+  transform:translate(-50%,-50%);
+  transition:width .2s ease,height .2s ease,opacity .2s ease,border-color .2s ease;
+}
+.custom-cursor-ring.is-hover{
+  width:44px;height:44px;opacity:.65;
+}
+@media (hover:none),(pointer:coarse){
+  html,body,a,button,input,textarea,select,[role="button"]{cursor:auto !important}
+  .custom-cursor-dot,.custom-cursor-ring{display:none !important}
+}
+@media (prefers-reduced-motion:reduce){
+  .custom-cursor-ring{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="custom-cursor-dot" aria-hidden="true"></div><div class="custom-cursor-ring" aria-hidden="true"></div>
+    <!-- Portfolio Loading Screen -->
+    <div class="portfolio-loader" id="portfolioLoader" aria-label="Portfolio Is Loading">
+        <div class="loader-content">
+            <div class="loader-spinner" aria-hidden="true"></div>
+            <h2>Portfolio <span>Is Loading</span></h2>
+            <div class="loader-progress" aria-hidden="true">
+                <div class="loader-progress-bar"></div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            Faaiz <span>Khan</span>
+        </a>
+        <button class="menu-toggle" id="menu" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#hire">Hire Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="gradient-btn">Contact Me</a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi It's <span>Faaiz</span></h1>
+            <h3 class="typewriter-heading"><span id="typing-text" aria-live="polite"></span><span class="typing-cursor" aria-hidden="true"></span></h3>
+            <p>I build modern, responsive, and user-friendly websites that look great on every screen. I focus on clean frontend code, polished UI, smooth interactions, and reliable performance using HTML, CSS, JavaScript, and modern web technologies.</p>
+
+            <div class="social-icons">
+            <a href="https://github.com/muhammadfaaizkhan77-png" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-faaiz-khan77" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/faaiz_khan245?igsi=aXgybjhweTQ4ZG11" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/share/1AXWdhYydN/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="muhammad-faaiz-khan-cv (4).pdf" class="btn">View CV</a>
+                <a href="#contact" class="btn">Start a Project</a>
+        </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Images/profile.jpeg" alt="">
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Images/profile.jpeg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I am a Frontend Developer focused on turning designs and ideas into responsive, accessible, and engaging web experiences. I build polished interfaces with attention to layout, typography, animations, usability, and cross-device compatibility. My goal is simple: create websites that are visually strong, easy to use, and built with clean, maintainable code.</p>
+            <a href="#contact" class="btn">Work With Me</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Frontend <span>Services</span></h2>
+        <p class="projects-intro">Focused frontend solutions for businesses, startups, personal brands, and online stores.</p>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h4>Website Development</h4>
+                    <p>Modern, responsive websites built from scratch with clean HTML, CSS, and JavaScript, structured for a professional user experience.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h4>Responsive Design</h4>
+                    <p>Pixel-conscious layouts that adapt smoothly across desktop, tablet, and mobile screens with consistent spacing and usability.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h4>UI Implementation</h4>
+                    <p>Clean and interactive interfaces converted from designs or ideas into polished frontend experiences with thoughtful visual hierarchy.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h4>Interactive Websites</h4>
+                    <p>Dynamic menus, forms, sliders, animations, filters, calculators, games, and other JavaScript-powered interactions.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fa-solid fa-store"></i>
+                    <h4>E-Commerce Frontend</h4>
+                    <p>Professional storefront interfaces with product grids, categories, search, cart layouts, responsive navigation, and conversion-focused sections.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h4>Redesign & Bug Fixes</h4>
+                    <p>Frontend improvements, responsive fixes, spacing and alignment corrections, UI refinements, and JavaScript issue resolution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Frontend Stack</span></h2>
+        <p class="projects-intro">Technologies and tools I use to create responsive, modern, and interactive web experiences.</p>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fa-brands fa-html5"></i><div><h4>HTML5</h4><p>Semantic & accessible structure</p></div></div>
+            <div class="skill-item"><i class="fa-brands fa-css3-alt"></i><div><h4>CSS3</h4><p>Responsive layouts & animations</p></div></div>
+            <div class="skill-item"><i class="fa-brands fa-js"></i><div><h4>JavaScript</h4><p>Interactive & dynamic interfaces</p></div></div>
+            <div class="skill-item"><i class="fa-solid fa-code"></i><div><h4>UI / UX</h4><p>Clean, usable interfaces</p></div></div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Recent <span>Work</span></h2>
+        <p class="projects-intro">A selection of responsive websites and interactive projects showcasing my frontend development, UI implementation, and JavaScript skills.</p>
+        <div class="project-box featured-projects">
+            <div class="project-card">
+                <img src="Images/Projects/fit-club.png">
+                <h3>Fit Club AI Fitness Website</h3>
+                <p>An AI-powered fitness website designed to help users explore workouts and get exercise guidance through an interactive Fit Club assistant.</p>
+                <a class="btn" href="https://imaginative-rugelach-d020cb.netlify.app/" target="_blank" rel="noopener noreferrer">Review Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/Projects/car-rental.jpg">
+                <h3>Car Rental Website</h3>
+                <p>A premium automotive website created to showcase vehicles through a bold design, strong visuals, and clear calls to action.</p>
+                <a class="btn" href="https://capable-cocada-6a71c6.netlify.app/" target="_blank" rel="noopener noreferrer">Review Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Images/Projects/urban-fashion.jpg">
+                <h3>Urban Fashion Landing Page</h3>
+                <p>A modern fashion landing page featuring a clean visual layout, promotional messaging, and an elegant product-focused presentation.</p>
+                <a class="btn" href="https://glittery-torrone-b11362.netlify.app/" target="_blank" rel="noopener noreferrer">Review Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="Images/Projects/Hostel Link.jpg">
+                <h3>HostelLink Portal - Verified Student Housing Solution</h3>
+                <p>HostelLink simplifies student housing with a location-focused accommodation portal. It provides seamless property discovery, campus proximity filters, and verified listing safety features.</p>
+                <a class="btn" href="https://charming-parfait-cfa1ae.netlify.app/" target="_blank" rel="noopener noreferrer">Review Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="Images/Projects/RedStore.jpg">
+                <h3>RedStore Sports Apparel - E-Commerce UX/UI</h3>
+                <p>RedStore Sports Apparel is a comprehensive case study of an end-to-end e-commerce platform for high-performance athletic wear. Focused on user-centric design, the project streamlined the customer journey from product discovery to purchase, delivering an intuitive, responsive, and engaging digital experience for athletes.</p>
+                <a class="btn" href="https://flourishing-frangollo-968bf8.netlify.app/" target="_blank" rel="noopener noreferrer">Review Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hire" id="hire">
+        <div class="hire-intro">
+            <span class="section-kicker"><i class="fa-solid fa-code"></i> AVAILABLE FOR FRONTEND PROJECTS</span>
+            <h2>Need a Modern <span>Frontend?</span></h2>
+            <p>Whether you need a landing page, business website, e-commerce frontend, portfolio, redesign, or JavaScript interaction, I can turn your idea into a responsive and professional web experience.</p>
+        </div>
+
+        <div class="freelance-services">
+            <div class="freelance-service"><i class="fa-solid fa-laptop-code"></i><span>Custom Websites</span></div>
+            <div class="freelance-service"><i class="fa-solid fa-mobile-screen-button"></i><span>Responsive UI</span></div>
+            <div class="freelance-service"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="freelance-service"><i class="fa-solid fa-screwdriver-wrench"></i><span>Fixes & Redesigns</span></div>
+        </div>
+
+        <div class="platform-grid">
+            <article class="platform-card fiverr-card">
+                <div class="platform-icon"><i class="fa-solid fa-store"></i></div>
+                <h3>Fiverr</h3>
+                <p>For clearly scoped frontend work such as landing pages, responsive websites, UI fixes, redesigns, and JavaScript features.</p>
+                <a href="https://www.fiverr.com/" target="_blank" rel="noopener noreferrer" class="platform-btn">Hire Me on Fiverr <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+            <article class="platform-card upwork-card">
+                <div class="platform-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Upwork</h3>
+                <p>For custom frontend projects, ongoing website improvements, responsive development, UI implementation, and interactive web experiences.</p>
+                <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" class="platform-btn">Hire Me on Upwork <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </article>
+            <article class="platform-card direct-card">
+                <div class="platform-icon"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Direct Contact</h3>
+                <p>Have a website idea or need a frontend fix? Send the requirements and I can discuss the project with you directly.</p>
+                <a href="#contact" class="platform-btn">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+        </div>
+
+        <div class="freelance-process">
+            <h3>How I Work</h3>
+            <div class="process-steps">
+                <div><span>01</span><h4>Understand</h4><p>Review your idea, design, requirements, and goals.</p></div>
+                <div><span>02</span><h4>Build</h4><p>Develop a clean, responsive, and interactive frontend.</p></div>
+                <div><span>03</span><h4>Refine</h4><p>Test layouts, interactions, responsiveness, and details.</p></div>
+                <div><span>04</span><h4>Deliver</h4><p>Finalize the website after your review and feedback.</p></div>
+            </div>
+        </div>
+        <div class="hire-note">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Available for freelance frontend projects, website redesigns, and long-term collaboration.</span>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="https://formsubmit.co/muhammadfaaizkhan77@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Faaiz Khan Portfolio">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="full_name" placeholder="Full Name" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+                </div>
+                <div class="input-box">
+                    <div class="phone-input">
+                        <select id="countryCode" name="country_code" aria-label="Select country calling code" required>
+                            <option value="+92" selected>+92</option>
+                        </select>
+                        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+         <div class="social-icons">
+            <a href="https://github.com/muhammadfaaizkhan77-png" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-faaiz-khan77" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/faaiz_khan245?igsi=aXgybjhweTQ4ZG11" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/share/1AXWdhYydN/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <p class="copyright"></p>
+    </footer>
+<script src="script.js?v=20260913-1" defer></script>
+
+<script id="custom-cursor-script">
+document.addEventListener('DOMContentLoaded', function () {
+  if (!window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+
+  const dot = document.querySelector('.custom-cursor-dot');
+  const ring = document.querySelector('.custom-cursor-ring');
+  if (!dot || !ring) return;
+
+  let x = -100, y = -100, rx = -100, ry = -100;
+
+  window.addEventListener('mousemove', function(e) {
+    x = e.clientX; y = e.clientY;
+    dot.style.left = x + 'px';
+    dot.style.top = y + 'px';
+  }, {passive:true});
+
+  function follow() {
+    rx += (x - rx) * 0.20;
+    ry += (y - ry) * 0.20;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(follow);
+  }
+  follow();
+
+  document.querySelectorAll('a,button,input,textarea,select,[role="button"]').forEach(function(el) {
+    el.addEventListener('mouseenter', () => ring.classList.add('is-hover'));
+    el.addEventListener('mouseleave', () => ring.classList.remove('is-hover'));
+  });
+
+  window.addEventListener('mousedown', () => ring.classList.add('is-hover'));
+  window.addEventListener('mouseup', () => ring.classList.remove('is-hover'));
+});
+</script>
+</body>
+</html>
